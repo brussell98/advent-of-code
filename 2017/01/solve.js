@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-let input = fs.readFileSync('./input', { encoding: 'utf8' }).replace(/\r|\n/g, '');
+let input = fs.readFileSync(__dirname + '/input', { encoding: 'utf8' }).replace(/(\r\n)*$/, '');
 console.log('[INPUT]', input);
 input = input.split('');
 
